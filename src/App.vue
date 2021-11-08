@@ -7,13 +7,34 @@
     :close-menu="activeStatus"
     :stripe-color="stripeColor"
   />
+
+  <div class="main">
+    <div class="container">
+      <color-picker
+        v-for="color in colorSet"
+        :key="color.id"
+        :colorName="color.name"
+        :colorValue="
+          val === 'hex'
+            ? color.hexValue
+            : val === 'rgb'
+            ? color.rgbValue
+            : val === 'hsl'
+            ? color.hslValue
+            : color.hexValue
+        "
+        @color-copied="changeStripeColor"
+      ></color-picker>
+    </div>
+  </div>
 </template>
 
 <script>
 import TheHeader from "./components/TheHeader.vue";
+import ColorPicker from "./components/ColorPicker.vue";
 
 export default {
-  components: { TheHeader },
+  components: { TheHeader, ColorPicker },
 };
 </script>
 
