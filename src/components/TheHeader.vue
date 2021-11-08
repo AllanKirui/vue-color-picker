@@ -18,6 +18,11 @@
     </button>
 
     <div class="stripe" :style="{ backgroundColor: stripeColor }"></div>
+
+    <options-menu
+      @choose-value="setColorValue"
+      :show-menu="closeMenu"
+    ></options-menu>
   </nav>
 
   <!-- Render the overlay in the body tag -->
@@ -31,7 +36,10 @@
 </template>
 
 <script>
+import OptionsMenu from "./OptionsMenu.vue";
+
 export default {
+  components: { OptionsMenu },
   props: ["closeMenu", "stripeColor"],
   emits: ["go-home", "set-value", "show-overlay", "hide-overlay"],
   data() {
