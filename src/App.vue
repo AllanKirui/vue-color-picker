@@ -30,11 +30,153 @@
 </template>
 
 <script>
+import colors from "./colors.js";
 import TheHeader from "./components/TheHeader.vue";
 import ColorPicker from "./components/ColorPicker.vue";
 
 export default {
   components: { TheHeader, ColorPicker },
+  data() {
+    return {
+      val: "hex",
+      colorSet: [],
+      state: {
+        querySet: colors,
+        page: 1, // the current page
+        numOfHexagons: 36, // number of hexagons to display per page
+        window: 5, // this handles how many pages we are allowed to display
+      },
+      buttonClicked: 1,
+      activePage: [1],
+      totalPages: [0],
+      activeStatus: false,
+      stripeColor: "",
+    };
+  },
+  methods: {
+    switchToHomepage() {
+      this.buttonClicked = 1;
+      this.activePage[0] = 1;
+      this.state.page = 1;
+      this.displayColors(this.buttonClicked);
+    },
+    setColorValue(val) {
+      switch (val) {
+        case "hex":
+          this.val = "hex";
+          break;
+        case "rgb":
+          this.val = "rgb";
+          break;
+        case "hsl":
+          this.val = "hsl";
+          break;
+
+        default:
+          this.val = "hex";
+          break;
+      }
+    },
+    displayColors(btn) {
+      const data = this.pagination(
+        this.state.querySet,
+        this.state.page,
+        this.state.numOfHexagons
+      );
+      this.colorSet = data.querySet;
+      this.displayPageButtons(data.pages, btn);
+      this.totalPages[0] = data.pages;
+    },
+    // takes in a querySet, our current page, number of hexagons to display
+    pagination(querySet, page, numOfHexagons) {
+      const trimStart = (page - 1) * numOfHexagons;
+      const trimEnd = trimStart + numOfHexagons;
+      const trimmedData = querySet.slice(trimStart, trimEnd);
+      const pages = Math.ceil(querySet.length / numOfHexagons);
+
+      return {
+        querySet: trimmedData,
+        pages: pages,
+      };
+    },
+    displayPageButtons(pages, btnValue) {
+      const that = this;
+      let buttonsWrapper = document.getElementById("options-page-btns");
+
+      buttonsWrapper.innerHTML = ``; // clear the buttons wrapper, on each call of the function
+
+      // set the value of the left and right most page buttons
+      let maxLeft = this.state.page - Math.floor(this.state.window / 2);
+      let maxRight = this.state.page + Math.floor(this.state.window / 2);
+
+      if (maxLeft < 1) {
+        maxLeft = 1;
+        maxRight = this.state.window;
+      }
+
+      if (maxRight > pages) {
+        maxLeft = pages - (this.state.window - 1);
+
+        if (maxLeft < 1) {
+          maxLeft = 1;
+        }
+        maxRight = pages;
+      }
+
+      // set the number of page buttons to display, with the active class on the active page button
+      for (let page = maxLeft; page <= maxRight; page++) {
+        if (page === btnValue || page === that.buttonClicked) {
+          buttonsWrapper.innerHTML += `<button value=${page} class="page page-btn active">${page}</button>`;
+        } else {
+          buttonsWrapper.innerHTML += `<button value=${page} class="page page-btn">${page}</button>`;
+        }
+      }
+
+      // add the 'first' page button if the active button is greater than or equal to 4
+      if (this.state.page >= 4) {
+        buttonsWrapper.innerHTML =
+          `<button value=${1} class="page page-btn">&#171; First</button>` +
+          buttonsWrapper.innerHTML;
+      }
+
+      // add the 'last' page button if the active button is less than or equal to the total number of pages minus 3
+      if (this.state.page <= pages - 3) {
+        buttonsWrapper.innerHTML += `<button value=${pages} class="page page-btn">Last &#187;</button>`;
+      }
+
+      const pageBtns = document.querySelectorAll(".page");
+
+      pageBtns.forEach((btn) => {
+        btn.addEventListener("click", function () {
+          const pageNumber = parseInt(this.value);
+          that.buttonClicked = pageNumber;
+          that.activePage[0] = pageNumber;
+          that.state.page = pageNumber;
+          that.displayColors(that.buttonClicked);
+        });
+      });
+    },
+    addOverlay(status) {
+      this.activeStatus = status;
+    },
+    removeOverlay(status) {
+      this.activeStatus = status;
+    },
+    changeStripeColor(color) {
+      this.stripeColor = color;
+    },
+  },
+  provide() {
+    return {
+      numOfPages: this.totalPages,
+      currentPage: this.activePage,
+    };
+  },
+  // use the mounted() lifecycle hook to execute the displayColors()
+  // method as soon as the page has loaded
+  mounted() {
+    this.displayColors();
+  },
 };
 </script>
 
