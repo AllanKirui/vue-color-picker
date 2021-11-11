@@ -8,6 +8,7 @@ This is a challenge I designed to help me practice my skills with the **[Vue.js]
   - [About the challenge](#about-the-challenge)
   - [Screenshots](#screenshots)
   - [Links](#links)
+  - [How to run](#how-to-use)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -16,8 +17,6 @@ This is a challenge I designed to help me practice my skills with the **[Vue.js]
 - [Author](#author)
 
 ## Overview
-
----
 
 ---
 
@@ -80,11 +79,18 @@ What's in view:
 
 ### Links
 
-- Live Site URL: []()
+- Live Site URL: [Vue Color Picker](https://allankirui.github.io/vue-color-picker/)
+
+### How to use
+
+- If you want to run my code, you need to follow these steps:
+
+1. **Clone** the repository into a folder (Or if you chose to download a **zip** file, extract it's contents). **Run** `npm install` in the extracted project folder to install all **required dependencies** (This
+   will create a **node_modules** folder)
+2. **Run** `npm run serve` to bring up the **development server**. You can view the app at **localhost:8080**
+   (or whichever **port** is shown in your **terminal**)
 
 ## My process
-
----
 
 ---
 
@@ -166,8 +172,6 @@ Going forward, I want continue learning more about **Frontend development** and 
 - [Vue Presentation](https://allankirui.github.io/A-Vuejs-Presentation/) - A while back after I had started learning **Vue**, I made a presentation on the framework. Do take a look, it might give you a better understanding of what the framework is about.
 
 ## Author
-
----
 
 ---
 
