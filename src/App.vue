@@ -266,6 +266,39 @@ body {
   overflow: hidden;
 }
 
+.container .hexagon .color {
+  margin: 0;
+  background-color: var(--color-mountbatten-pink);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform-origin: 0% 50%;
+  transition: transform 0.75s;
+}
+
+.container .hexagon .color-name {
+  border-bottom: 1px solid #000;
+}
+
+.container .hexagon:hover .color {
+  transform: rotate(-150deg);
+}
+
+.container .hexagon .color-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+  font-size: 14px;
+  padding: 10px;
+}
+
 #options-page-btns {
   margin-bottom: 30px;
   text-align: left;
