@@ -39,7 +39,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .hexagon .color {
   margin: 0;
   background-color: var(--color-mountbatten-pink);
