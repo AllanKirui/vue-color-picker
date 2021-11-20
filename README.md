@@ -29,9 +29,19 @@ The challenge aims to test the developer's skill in:
 
 ### Screenshots
 
+![](./src/assets/markdown_images/local-dev-server-desktop.png)
+
+Screenshot of the **Home** page running on my **Local Development Server**.
+
+What's in view:
+
+- It's shows the design of the site on **Desktop**.
+
+---
+
 ![](./src/assets/markdown_images/desktop-design.png)
 
-Screenshot of the **Home** page design.
+Screenshot of the **Home** page from the designs.
 
 What's in view:
 
