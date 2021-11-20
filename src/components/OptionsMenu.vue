@@ -56,7 +56,9 @@
 
     <div class="options-link">
       <div class="link">
-        <a href="" title="GitHub"
+        <a
+          href="https://github.com/AllanKirui/vue-color-picker"
+          title="View code on GitHub"
           ><img src="../assets/github-logo.svg" alt="GitHub logo" /> GITHUB</a
         >
       </div>
