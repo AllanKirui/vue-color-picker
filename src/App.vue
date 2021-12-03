@@ -248,8 +248,8 @@ body {
   float: left;
   height: 120%;
   shape-outside: repeating-linear-gradient(
-    #0000 0 calc(var(--f) - 3px),
-    #000 0 var(--f)
+    rgba(0, 0, 0, 0) 0 calc(var(--f) - 3px),
+    rgb(0, 0, 0) 0 var(--f)
   );
 }
 
