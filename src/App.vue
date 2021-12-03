@@ -188,6 +188,7 @@ export default {
   --s: 120px; /* size  */
   --m: 4px; /* margin */
   --f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
+  --zero: 0;
 
   /* Colors */
   --color-cultured: #f7f2f7;
@@ -248,7 +249,7 @@ body {
   float: left;
   height: 120%;
   shape-outside: repeating-linear-gradient(
-    rgba(0, 0, 0, 0) 0 calc(var(--f) - 3px),
+    rgba(0, 0, 0, 0) var(--zero) calc(var(--f) - 3px),
     rgb(0, 0, 0) 0 var(--f)
   );
 }
