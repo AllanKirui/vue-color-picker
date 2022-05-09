@@ -31,7 +31,7 @@ The challenge aims to test the developer's skill in:
 
 ![](./src/assets/markdown_images/local-dev-server-desktop.png)
 
-Screenshot of the **Home** page running on my **Local Development Server**.
+Screenshot of the **Homepage** running on my **Local Development Server**.
 
 What's in view:
 
@@ -41,7 +41,7 @@ What's in view:
 
 ![](./src/assets/markdown_images/desktop-design.png)
 
-Screenshot of the **Home** page from the designs.
+Screenshot of the **Homepage** from the designs.
 
 What's in view:
 
