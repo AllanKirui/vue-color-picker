@@ -41,7 +41,7 @@ What's in view:
 
 ![](./src/assets/markdown_images/desktop-design.png)
 
-Screenshot of the **Homepage** from the designs.
+Screenshot of the **Homepage** from the included design file.
 
 What's in view:
 
@@ -51,7 +51,7 @@ What's in view:
 
 ![](./src/assets/markdown_images/nav-states.png)
 
-Screenshot of the **Menu**.
+Screenshot of the **Menu** from the included design file.
 
 What's in view:
 
@@ -61,7 +61,7 @@ What's in view:
 
 ![](./src/assets/markdown_images/hexagon-states.png)
 
-Screenshot of the **Hexagons**.
+Screenshot of the **Hexagons** from the included design file.
 
 What's in view:
 
@@ -71,7 +71,7 @@ What's in view:
 
 ![](./src/assets/markdown_images/stripe-state.png)
 
-Screenshot of the **Stripe**.
+Screenshot of the **Stripe** from the included design file.
 
 What's in view:
 
@@ -186,6 +186,6 @@ Going forward, I want continue learning more about **Frontend development** and 
 ---
 
 - Github - [Allan Kirui](https://www.github.com/AllanKirui)
-- Instagram - [@nallawilljr](https://www.instagram.com/nallawilljr)
+- Email - <allan.kirui@outlook.com>
 
 [Back to top](#color-picker)
