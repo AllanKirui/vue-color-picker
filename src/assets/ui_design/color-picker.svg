@@ -154,9 +154,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.3948322"
-     inkscape:cx="1212.7554"
-     inkscape:cy="599.67713"
+     inkscape:zoom="0.29935403"
+     inkscape:cx="2201.7702"
+     inkscape:cy="-16.695842"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -273,12 +273,12 @@
        xml:space="preserve"
        style="font-size:25.4005px;line-height:1.25;font-family:'Work Sans';-inkscape-font-specification:'Work Sans';word-spacing:0px;stroke-width:0.635014"
        x="489.19037"
-       y="-53.845898"
+       y="-87.183395"
        id="text935"><tspan
          sodipodi:role="line"
          id="tspan933"
          x="489.19037"
-         y="-53.845898"
+         y="-87.183395"
          style="stroke-width:0.635014"><tspan
    style="font-weight:bold;stroke-width:0.635014"
    id="tspan937">Color Picker</tspan> Website Design</tspan></text>
@@ -1100,13 +1100,6 @@
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="opacity:0.999;mix-blend-mode:normal;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.290168"
-       id="rect2267"
-       width="361.61661"
-       height="31.931543"
-       x="1875.2676"
-       y="28.053972" />
-    <rect
        style="fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.588966;filter:url(#filter2623)"
        id="rect1831"
        width="103.52523"
@@ -1345,12 +1338,12 @@
        xml:space="preserve"
        style="font-size:16.9333px;line-height:1.25;font-family:'Work Sans';-inkscape-font-specification:'Work Sans';word-spacing:0px;stroke-width:0.635014"
        x="576.69128"
-       y="-14.072757"
+       y="-47.410267"
        id="text1589"><tspan
          sodipodi:role="line"
          id="tspan1587"
          x="576.69128"
-         y="-14.072757"
+         y="-47.410267"
          style="font-size:16.9333px;stroke-width:0.635014">Desktop Size: 1400px</tspan></text>
     <text
        xml:space="preserve"
@@ -2652,12 +2645,12 @@
        xml:space="preserve"
        style="font-size:9.525px;line-height:1.25;font-family:'Work Sans';-inkscape-font-specification:'Work Sans';word-spacing:0px;stroke-width:0.635014"
        x="526.31195"
-       y="-38.820492"
+       y="-72.158005"
        id="text1861"><tspan
          sodipodi:role="line"
          id="tspan1859"
          x="526.31195"
-         y="-38.820492"
+         y="-72.158005"
          style="font-size:9.525px;stroke-width:0.635014">Note that the final coded design might be slightly different</tspan></text>
     <g
        id="g1123"
@@ -2876,5 +2869,25 @@
          x="292.09235"
          y="149.88097"
          style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:'Work Sans';-inkscape-font-specification:'Work Sans Semi-Bold';stroke-width:0.635014;font-size:5.82083335px;">Title icon</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:'Work Sans';-inkscape-font-specification:'Work Sans';text-align:center;word-spacing:0px;text-anchor:middle;stroke-width:0.635014"
+       x="664.77417"
+       y="-29.824667"
+       id="text1141"><tspan
+         sodipodi:role="line"
+         id="tspan1139"
+         x="664.77417"
+         y="-29.824667"
+         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.635014">You might need to install the <tspan
+   style="font-weight:bold;font-size:6.35px"
+   id="tspan1145">Work Sans</tspan> and <tspan
+   style="font-weight:bold;font-size:6.35px"
+   id="tspan1147">Amita</tspan> fonts from Google Fonts</tspan><tspan
+         sodipodi:role="line"
+         x="664.77417"
+         y="-21.887167"
+         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.635014"
+         id="tspan1143">because those are the fonts used in this design file.</tspan></text>
   </g>
 </svg>
